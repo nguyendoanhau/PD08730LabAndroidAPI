@@ -6,14 +6,10 @@ export default function Counter (){
     const handleIncrease= ()=>{
         setCounter(counter+1)
     }
-    const handleGiam= ()=>{
-        setCounter(counter)
-    }
     return(
         <View>
             <Text>{counter}</Text>
             <Button title="Tang" onPress={handleIncrease}/>
-            <Button title="Giam" onPress={handleGiam}/>
         </View>
     )
 }
